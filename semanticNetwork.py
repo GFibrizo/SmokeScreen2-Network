@@ -45,3 +45,8 @@ class SemanticNetwork(object):
             pass
 
         self.client.command("create edge "+relationship+" from ( select from Concepts where name = '"+concept1+"') to (select from Concepts where name = '"+concept2+"')")
+
+    def search_related_concepts(self,relationship,concept):
+        relationship = "_".join(relationship.split())
+        concepts = [ concept.name for concept in self.client.command("select expand( in( "+relationship+" )) from Concepts where name='"+concept+"'")
+        return concepts
