@@ -1,0 +1,12 @@
+MY_MAMALS
+sparrow,bird, is a
+dog,canine, is a
+canine,mammal, is a
+feline,mammal, is a
+mammal,animal, is a
+canine,meat, eats
+bird,seeds, eats
+bird,insects, eats
+bird,animal, is a
+mammal,hair, has
+bird,feathers, has
